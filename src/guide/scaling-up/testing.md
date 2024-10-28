@@ -417,7 +417,7 @@ import { useFoo } from './foo'
 
 test('useFoo', () => {
   const [result, app] = withSetup(() => useFoo(123))
-  // имитация provide for для тестирование инъекций
+  // имитация provide для тестирование инъекций
   app.provide(...)
   // запуск проверок
   expect(result.foo.value).toBe(1)
